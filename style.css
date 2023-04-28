@@ -1,5 +1,56 @@
-body {
-    /* background-image: url('./images/yellowbike.jpg') */
-    background-color: #BFACC8;
+
+style
+    *{
+        margin: 0;
+        padding: 0;
     }
-    
+
+    body {
+        width: 100%;
+        background-color: slategray;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        background-color: maroon;
+    }
+
+    header h2 {
+        color: blanchedalmond;
+        background-color: red;
+        padding: 10px 10px 10px 30px;
+    }
+
+    nav a {
+        color: blanchedalmond;
+        margin: 0 20px;
+    }
+    .image1 {
+  background-image: url('./images/yellowbike.jpg');
+  padding: 5px;
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+  }
+
+    .banner {
+        height: 150px;
+        border: 2px solid blanchedalmond;
+        background-image: url("https://wallpapers.com/images/featured/sjryfre8k8f6i3ge.jpg");
+        background-size: cover;
+    }
+    .box {
+      height: 150px;
+      border: 2px solid blanchedalmond;
+      background-origin: padding-box;
+      background-image: image();  
+    }
+    .container {
+        height: 300px;
+        border: 2px solid blanchedalmond;
+        background-color: aqua;
+    }
+     
