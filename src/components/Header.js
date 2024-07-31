@@ -1,13 +1,14 @@
 import React from 'react';
+import styles from './Header.module.css';
 
 function Header ({ activeSection, onSectionChange}) {
     // ...header content and navigation logic...
     return (
-        <header>
+        <header className={styles.header}>
             <h1>Amazing Grace</h1>
-            <nav>
+            <nav className={styles.nav}>
                 <ul>
-                    <li className={activeSection === 'about' ? 'active' : ''}>
+                    <li className={activeSection === 'about' ? 'styles.active' : ''}>
                         <a href='#' onClick={() => onSectionChange('about')}>About</a>
                     </li>
                     <li className={activeSection === 'projects' ? 'active' : ''}>

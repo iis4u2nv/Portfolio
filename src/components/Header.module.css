@@ -1,0 +1,61 @@
+.header {
+    /* background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;     */
+
+    display: flex;
+    flex-direction: column; /* stack elements vertically */
+    align-items: center;
+    background-image: url('Portfolio\images\yellowbike.jpg'); /* Add background image */
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+.nav {
+    /* gap: 30px; Increase gap between navigation items */
+    flex-direction: column; /* Stack navigation items vertically */
+  }
+  
+  .nav a {
+    padding: 10px 15px; /* Add padding to navigation links */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s ease-in-out; /* Add hover effect */
+  }
+  
+  .nav a:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+  }
+
+  @media (min-width: 768px) {
+    .header {
+      flex-direction: row; /* Change to horizontal layout for larger screens */
+    }
+  
+    .nav {
+      flex-direction: row; /* Change to horizontal layout for larger screens */
+    }
+  }
+
+/* .header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.nav li {
+    margin: 0;
+    padding: 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.nav .active {
+    color: #ff0000;   change color desired
+*/
+
